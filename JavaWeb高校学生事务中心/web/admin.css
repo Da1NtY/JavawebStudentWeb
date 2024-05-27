@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* 侧边导航栏样式 */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    padding-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+    color: #333;
+}
+
+.sidenav a:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+.sidenav a.active {
+    background-color: #ddd;
+    color: #000;
+}
+
+/* 页面内容样式 */
+.main {
+    margin-left: 200px; /* 侧边导航栏宽度 */
+    padding: 20px;
+}
+
+/* 表格样式 */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.table img {
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 表单样式 */
+.table form {
+    display: flex;
+    align-items: center;
+}
+
+.table select,
+.table input[type="submit"] {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+}
